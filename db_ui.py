@@ -2,12 +2,7 @@
 #-*- coding: UTF-8 -*-
 
 from PyQt4 import QtCore, QtGui ,QtNetwork
-# from PyQt4.QtCore import *
-# from ctypes import *
-# from PyQt4 import uic
-# from PyQt4.QtGui import *
-# from PyQt4.QtCore import *
-#from PyQt4.QtWidgets import *
+
 from PyQt4.QtGui import *
 from PyQt4.QtCore import *
 from PyQt4 import uic

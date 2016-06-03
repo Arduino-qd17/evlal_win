@@ -6,11 +6,9 @@ import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
 import sqlite3
-import threading
+
 from Clicked_Controller import log #日志记录
-import thread
-import ConfigParser  #INI读取数据
-import os
+
 
 class C_sqlite3():
     def __init__(self):
@@ -36,26 +34,7 @@ class C_sqlite3():
             print u"关闭数据异常"
             return 0
 
-#    def mysqlite3_select(self):  #查询数据
-#        try:
-#            self.conn.commit()# 获取到游标对象
-#            cur = self.conn.cursor()# 用游标来查询就可以获取到结果
-#            cur.execute("select * from TCP_port")# 获取所有结果
-#            res = cur.fetchall()  #从结果中取出所有记录
-#            for line in res:
-#                for f in line:
-#                    print f,
-#                print
-#            print '-'*60
-#            cur.close()  #关闭游标
-#        except:
-#            print u"查询数据异常"
-#
-#    def mysqlite3_insert(self,data):  #添加数据
-#        try:
-#            return self.conn.execute(data)
-#        except:
-#            print u"添加数据异常"
+
 
     def mysqlite3_select(self,data):  #查询数据
         try:
@@ -106,15 +85,5 @@ if __name__=='__main__':
     new.mysqlite3_open()
     print new.mysqlite3_insert("insert into www(url,time) VALUES('111','222')")
 
-#    mysql_handle.__init__('localhost','root','316118740','urldata')
-#    mysql.mysql_open()  #连接数据库
-#    TH_OPURL=CS_openurl()
-#    TH_OPURL.start()
-#    threads = []  #线程
-#    nthreads=5
-#    for i in range(nthreads):  #nthreads=10  创建10个线程
-#        threads.append(C_sqlite3(i))
-#
-#    for thread in threads:   #不理解这是什么意思    是结束线程吗
-#        thread.start()  #start就是开始线程
+
 

@@ -2,16 +2,7 @@
 #-*- coding: UTF-8 -*-
 
 from PyQt4 import QtCore, QtGui ,QtNetwork
-# from PyQt4.QtCore import *
-# from ctypes import *
-# from PyQt4 import uic
-# from PyQt4.QtGui import *
-# from PyQt4.QtCore import *
-#from PyQt4.QtWidgets import *
-from PyQt4.QtGui import *
-from PyQt4.QtCore import *
-#import socket
-#socket.setdefaulttimeout(10)
+
 
 import sys
 reload(sys)
@@ -84,11 +75,7 @@ if __name__=="__main__":
     except BaseException, e:
         pass
 
-        #RValues = dlg.GetOriginValue()
-        #self.setFocusPolicy(Qt.NoFocus)
-        #Action.show()
-        #Action.activateWindow()
-    #=========================
+
     sys.exit(app.exec_())
 
 
